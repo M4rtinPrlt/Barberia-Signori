@@ -297,7 +297,7 @@ footer p { color: #ffffff;}
 }
 .ubicacion-urquiza{
   display: flex;
-  gap: 20px; /* espacio entre imágenes (opcional) */
+  gap: 20px; /* espacio entre imágenes */
   align-items: stretch;
   justify-content: center;
   
@@ -326,5 +326,62 @@ footer p { color: #ffffff;}
   border: 0;
   min-height: 400px; /* para que se vea parejo con las imágenes */
 }
+
+/* --- Ajuste para el mapa  --- */
+@media (max-width: 768px) {
+  .ubicacion-carapachay,
+  .ubicacion-urquiza {
+    flex-direction: column; /* apila fotos y mapa */
+    align-items: center;
+  }
+
+  .local-carapachay,
+  .local-urquiza {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1 / 1; /* mantiene cuadrado */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+  }
+
+  .local-carapachay img,
+  .local-urquiza img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .mapa-carapachay,
+  .mapa-urquiza {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .mapa-carapachay iframe,
+  .mapa-urquiza iframe {
+    width: 100% !important;
+    aspect-ratio: 1 / 1; /* igual alto que ancho */
+    height: auto !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .local-carapachay,
+  .local-urquiza {
+    max-width: 320px;
+  }
+
+  .mapa-carapachay iframe,
+  .mapa-urquiza iframe {
+    width: 100% !important;
+    aspect-ratio: 1 / 1;
+    height: auto !important;
+  }
+}
+
+
+
 
 
