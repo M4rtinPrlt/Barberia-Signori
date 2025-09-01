@@ -1,0 +1,280 @@
+@charset "UTF-8";
+header {
+  background-color: #161a1d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 155px;
+  font-family: "Oswald", sans-serif;
+}
+header .logo {
+  width: 200px; /* tamaño para */
+  display: flex;
+  align-items: center;
+}
+header ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+}
+header ul li {
+  display: flex;
+}
+header a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 40px; /* tamaño de las letras del menu */
+  text-align: center;
+}
+header a :hover {
+  color: #D3D3D3; /* color que se pone cuando pasas el mouse x encima */
+  transition: color 0.3s ease; /* hace que el cambio sea suave */
+}
+
+footer {
+  background-color: #161a1d;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  height: 155px;
+  font-family: "Oswald", sans-serif;
+}
+footer .caja {
+  display: flex;
+}
+footer .caja .logo {
+  max-width: 15%;
+  height: auto;
+}
+footer .caja .logo img {
+  width: 300px;
+  height: auto;
+  margin-right: 20px;
+}
+footer .caja a:hover {
+  color: #D3D3D3; /* color que se pone cuando pasas el mouse x encima */
+  transition: color 0.3s ease; /* hace que el cambio sea suave */
+  text-align: right;
+}
+footer .caja a {
+  text-decoration: none;
+  color: #ffffff;
+  text-align: justify;
+}
+footer .caja footer p {
+  color: #ffffff;
+}
+footer .caja a {
+  text-align: left;
+}
+
+.contenedor {
+  display: flex;
+  align-items: flex-start; /* Alinea la imagen y el texto al principio */
+  border: 1px solid #ccc;
+  padding: 20px;
+  max-width: 3000px; /* Ajusta el ancho máximo */
+  margin: 0 auto; /* Centra la caja */
+}
+.contenedor .local img {
+  width: 500px; /* Ajusta el tamaño de la imagen */
+  height: 940px; /* Ajusta el tamaño de la imagen */
+  object-fit: cover; /* Asegura que la imagen mantenga su aspecto */
+  margin-right: 20px; /* Espacio entre la imagen y el texto */
+  border-radius: 8px; /* Bordes redondeados en la imagen */
+}
+.contenedor .texto {
+  flex: 1;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+.contenedor .texto p {
+  text-align: justify;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.servicios img {
+  width: 250px; /* Ajusta el tamaño de la imagen */
+  height: 250px; /* Ajusta el tamaño de la imagen */
+  object-fit: cover; /* Asegura que la imagen mantenga su aspecto */
+  margin-right: 20px; /* Espacio entre la imagen y el texto */
+  border-radius: 8px; /* Bordes redondeados en la imagen */
+}
+
+.ubicacion .ubicacion-carapachay {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  display: flex;
+  align-items: flex-start;
+  display: flex;
+  gap: 20px; /* espacio entre imágenes (opcional) */
+  align-items: stretch;
+  justify-content: center;
+}
+.ubicacion .ubicacion-carapachay .local-carapachay {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+  width: 400px;
+  aspect-ratio: 1/1; /* mantiene el cuadrado perfecto */
+}
+.ubicacion .ubicacion-carapachay .local-carapachay img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.ubicacion .ubicacion-carapachay .mapa-carapachay iframe {
+  width: 400px;
+  height: 100%;
+  border: 0;
+  min-height: 400px; /* para que se vea parejo con las imágenes */
+}
+.ubicacion .ubicacion-urquiza {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  display: flex;
+  align-items: flex-start;
+  display: flex;
+  gap: 20px; /* espacio entre imágenes */
+  align-items: stretch;
+  justify-content: center;
+}
+.ubicacion .ubicacion-urquiza .local-urquiza {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 5px;
+  width: 400px;
+  aspect-ratio: 1/1; /* mantiene el cuadrado perfecto */
+}
+.ubicacion .ubicacion-urquiza .local-urquiza img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.ubicacion .ubicacion-urquiza .mapa-urquiza iframe {
+  width: 400px;
+  height: 100%;
+  border: 0;
+  min-height: 400px; /* para que se vea parejo con las imágenes */
+}
+
+@media (max-width: 768px) {
+  /* HEADER */
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+    text-align: center;
+  }
+  header .logo {
+    width: 150px;
+    justify-content: center;
+  }
+  header ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+  header a {
+    font-size: 24px;
+  }
+  /* MAIN - CONTENIDO INDEX */
+  .contenedor {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .contenedor .local img {
+    width: 100%;
+    height: auto;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .contenedor .texto {
+    font-size: 16px;
+    width: 90vw;
+  }
+  /* FOOTER */
+  footer {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+  }
+  footer .caja {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  footer .caja img {
+    width: 80px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+  footer .caja footer a, footer .caja footer p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .ubicacion-carapachay,
+  .ubicacion-urquiza {
+    flex-direction: column; /* apila fotos y mapa */
+    align-items: center;
+  }
+  .local-carapachay,
+  .local-urquiza {
+    width: 100%;
+    max-width: 400px;
+    aspect-ratio: 1/1; /* mantiene cuadrado */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 5px;
+  }
+  .local-carapachay img,
+  .local-urquiza img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .mapa-carapachay,
+  .mapa-urquiza {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .mapa-carapachay iframe,
+  .mapa-urquiza iframe {
+    width: 100% !important;
+    aspect-ratio: 1/1; /* igual alto que ancho */
+    height: auto !important;
+  }
+}
+@media (max-width: 480px) {
+  .local-carapachay,
+  .local-urquiza {
+    max-width: 320px;
+  }
+  .mapa-carapachay iframe,
+  .mapa-urquiza iframe {
+    width: 100% !important;
+    aspect-ratio: 1/1;
+    height: auto !important;
+  }
+}
+
+/*# sourceMappingURL=estilazos.css.map */
