@@ -28,7 +28,7 @@ header {
             } 
     }
     a {
-    color:$blanco;
+    color: $blanco;
     text-decoration: none;
     font-size: 40px; /* tamaño de las letras del menu */
     text-align: center;
@@ -49,13 +49,13 @@ footer{
     font-family: "Oswald", sans-serif;
 
     .caja{
-    display: flex;
+    display: flex; 
 
     .logo{  max-width: 15%;
     height: auto; 
     img{
     width: 300px;
-    height: auto;
+    height: auto; 
     margin-right: 20px;
     }
     }
