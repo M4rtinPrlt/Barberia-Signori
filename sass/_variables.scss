@@ -1,0 +1,7 @@
+$blanco:#ffffff;
+$negro:#161a1d;
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+}

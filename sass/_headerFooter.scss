@@ -1,7 +1,9 @@
+@use "variables" as*;
+
+
 header {
-    background-color: #161a1d;
-    display: flex;
-    align-items: center;
+    background-color: $negro;
+    @include flex;
     justify-content: space-between;
     padding: 0 40px;
     height: 155px;
@@ -9,8 +11,7 @@ header {
     
     .logo {
     width: 200px; /* tamaño para */
-    display: flex;
-    align-items: center;
+    @include flex;
     }
     
     ul {
@@ -27,7 +28,7 @@ header {
             } 
     }
     a {
-    color: #ffffff;
+    color:$blanco;
     text-decoration: none;
     font-size: 40px; /* tamaño de las letras del menu */
     text-align: center;
@@ -40,9 +41,8 @@ header {
 
 
 footer{
-    background-color: #161a1d;
-    display: flex;
-    align-items:center;
+    background-color: $negro;
+    @include flex;
     justify-content: space-between;
     padding: 0 40px;
     height: 155px;
@@ -66,10 +66,10 @@ footer{
     }
     
     a{ text-decoration: none;
-        color: #ffffff; 
+        color: $blanco; 
         text-align:justify;
     }
-    footer p { color: #ffffff;}
+    footer p { color: $blanco;}
 
     a{
         text-align: left;
